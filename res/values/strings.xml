@@ -405,4 +405,8 @@
     <string name="qs_battery_estimate_title">Battery estimates</string>
     <string name="qs_battery_estimate_summary">Show estimated remaining battery life next to the icon</string>
 
+    <!-- Brightness control -->
+    <string name="status_bar_toggle_brightness">Brightness control</string>
+    <string name="status_bar_toggle_brightness_summary">Adjust brightness by sliding across the status bar</string>
+
 </resources>
