@@ -19,6 +19,11 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+         <com.android.settings.custom.preference.SystemSettingSwitchPreference
+            android:key="use_old_mobiletype"
+            android:title="@string/use_old_mobiletype_title"
+            android:summary="@string/use_old_mobiletype_summary"
+            android:defaultValue="false" />  
 
    <PreferenceCategory
 	   android:key="statusbar_category"
@@ -29,7 +34,7 @@
             android:key="traffic"
             android:fragment="org.elixir.essence.fragments.Traffic"
             android:title="@string/traffic_title" />
-
+   
    </PreferenceCategory>
 
    <PreferenceCategory
