@@ -30,11 +30,21 @@
     <PreferenceCategory
         android:layout="@layout/custom_preference_category2"
         android:title="@string/general_category">
-            <org.elixir.essence.preferences.SystemSettingSwitchPreference
+        
+        <org.elixir.essence.preferences.SystemSettingSwitchPreference
             android:key="hide_lockscreen_status_bar"
             android:title="@string/hide_lockscreen_status_bar_title"
             android:summary="@string/hide_lockscreen_status_bar_summary"
             android:defaultValue="false" />
+
+        <org.elixir.essence.preferences.SystemSettingListPreference
+            android:key="lockscreen_albumart_filter"
+            android:title="@string/lockscreen_albumart_filter_title"
+            android:entries="@array/lockscreen_albumart_filter_entries"
+            android:entryValues="@array/lockscreen_albumart_filter_values"
+            android:defaultValue="0" />
+
+
 
     </PreferenceCategory>
 
