@@ -26,6 +26,18 @@
         android:layout="@layout/custom_preference_category_essence">
     </PreferenceCategory>
 
+    <!-- Preferences -->
+    <PreferenceCategory
+        android:layout="@layout/custom_preference_category2"
+        android:title="@string/general_category">
+            <org.elixir.essence.preferences.SystemSettingSwitchPreference
+            android:key="hide_lockscreen_status_bar"
+            android:title="@string/hide_lockscreen_status_bar_title"
+            android:summary="@string/hide_lockscreen_status_bar_summary"
+            android:defaultValue="false" />
+
+    </PreferenceCategory>
+
     <PreferenceCategory
             android:layout="@layout/custom_preference_category2"
 	    android:title="@string/lockscreen_gestures_category">
