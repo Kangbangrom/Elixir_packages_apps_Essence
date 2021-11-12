@@ -9,9 +9,9 @@
             app:exb_color="@color/bottombar_active" />
 
     <item
-            android:id="@+id/theme_category"
+            android:id="@+id/themes_category"
             android:icon="@drawable/ic_theme_category"
-	    android:title="@string/theme_category" 
+	    android:title="@string/themes_category" 
             app:exb_color="@color/bottombar_active" />
 
     <item

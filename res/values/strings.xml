@@ -38,7 +38,7 @@
     <!-- Extensions categories -->
     <string name="status_bar_category">Statusbar</string>
     <string name="system_category">Team</string>
-    <string name="theme_category">Themes</string>
+    <string name="themes_category">Themes</string>
     <string name="qs_category">QS</string>
     <string name="lockscreen_category">Lockscreen</string>
     <string name="hardware_category">Extras</string>
@@ -104,7 +104,6 @@
     <string name="lockscreen_customization_category">Lockscreen Customizations</string>
     <string name="statusbar_gesture_category">Statusbar Gesture</string>
     <string name="battery_settings_title">Battery Settings</string>   
-    <string name="customisation_title">Comming SOON !</string>
     <string name="ls_cat_secure">Secure Lockscreen</string>
     <string name="signal_category">Network Icon</string>
     <string name="notification_custs">Notification Options</string>
@@ -296,5 +295,17 @@
     <!-- Annoying Notifications -->
     <string name="notification_sound_vib_screen_on_title">Annoying Notifications</string>
     <string name="notification_sound_vib_screen_on_summary">Play sound and vibration for notifications when screen is on</string>
+
+    <!-- Customisation -->
+    <string name="customisation_title">Monet Customisation</string>
+
+    <!-- Monet Engine -->
+    <string name="monet_engine_custom_color_title">Use custom color</string>
+    <string name="monet_engine_custom_color_summary">Use custom color for monet engine instead of wallpaper colors</string>
+    <string name="monet_engine_color_override_title">Custom color</string>
+    <string name="monet_engine_white_luminance_user_title">White luminance</string>
+    <string name="monet_engine_accurate_shades_title">Use accurate shades</string>
+    <string name="monet_engine_chroma_factor_title">Chroma factor</string>
+    <string name="monet_engine_linear_lightness_title">Use linear lightness</string>
 
 </resources>

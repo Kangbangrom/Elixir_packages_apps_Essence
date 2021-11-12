@@ -48,7 +48,7 @@
             app:extensions_title="@string/system_category" />
  
         <org.elixir.essence.navigation.BubbleToggleView
-            android:id="@+id/theme_category"
+            android:id="@+id/themes_category"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:extensions_titleColorActive="@color/text_color"
@@ -56,7 +56,7 @@
             app:extensions_colorInactive="@color/color_inactive"
             app:extensions_icon="@drawable/ic_theme_category"
             app:extensions_shape="@drawable/navigation_transition_background_drawable_status_bar"
-            app:extensions_title="@string/theme_category" />
+            app:extensions_title="@string/themes_category" />
 
         <org.elixir.essence.navigation.BubbleToggleView
             android:id="@+id/status_bar_category"

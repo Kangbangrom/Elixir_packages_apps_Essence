@@ -20,31 +20,41 @@ import android.content.Context;
 import android.content.ContentResolver;
 import android.content.res.Resources;
 import android.os.Bundle;
+
+import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceGroup;
-
 import androidx.preference.PreferenceScreen;
 import androidx.preference.Preference.OnPreferenceChangeListener;
+import androidx.preference.SwitchPreference;
+
+import android.graphics.Color;
+import android.os.Handler;
+import android.os.UserHandle;
+import android.provider.Settings;
+
+import net.margaritov.preference.colorpicker.ColorPickerPreference;
+import com.android.settings.custom.preference.CustomSeekBarPreference;
 
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
-public class Theme extends SettingsPreferenceFragment implements
-        Preference.OnPreferenceChangeListener {
+public class Themes extends SettingsPreferenceFragment 
+	implements Preference.OnPreferenceChangeListener {
 
-    private static final String TAG = "Theme";
+    private static final String TAG = "Themes";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.theme);
+        addPreferencesFromResource(R.xml.themes);
 
+	PreferenceScreen prefSet = getPreferenceScreen();
         ContentResolver resolver = getActivity().getContentResolver();
 
     }
-
 
     @Override
     public int getMetricsCategory() {
