@@ -14,6 +14,7 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
+
 <resources>
 
     <!-- Network traffic location -->
@@ -36,6 +37,18 @@
     </string-array>
 
     <string-array name="network_traffic_mode_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <!-- Torch Power button gestures -->
+    <string-array name="torch_power_button_gesture_entries">
+        <item>@string/torch_power_button_gesture_none</item>
+        <item>@string/torch_power_button_gesture_dt</item>
+        <item>@string/torch_power_button_gesture_lp</item>
+    </string-array>
+    <string-array name="torch_power_button_gesture_values" translatable="false">
         <item>0</item>
         <item>1</item>
         <item>2</item>
