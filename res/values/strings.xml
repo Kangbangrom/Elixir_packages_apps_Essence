@@ -255,5 +255,9 @@
     <!-- Location Privacy Indicator -->
     <string name="location_privacy_title"> Show Location Privacy Indicator</string>
     <string name="location_privacy_summary">Enable - Disable location privacy indicator in qs and sb</string>
+	    
+    <!-- 4G icon -->
+    <string name="show_fourg_icon_title">4G icon</string>
+    <string name="show_fourg_icon_summary">Display 4G icon in signal icon instead LTE</string>
 
 </resources>
