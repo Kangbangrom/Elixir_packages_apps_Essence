@@ -58,6 +58,17 @@
             android:summary="@string/double_tap_sleep_gesture_summary"
             android:defaultValue="false" />
 
- </PreferenceCategory>
+   </PreferenceCategory>
+
+   <PreferenceCategory
+            android:title="@string/statusbar_clock">
+
+              <Preference
+	        android:fragment="org.elixir.essence.fragments.ClockOptions"
+	        android:key="clock_options_category"
+	        android:summary="@string/clock_options_summary"
+	        android:title="@string/clock_options_title" />
+
+    </PreferenceCategory>
 
 </PreferenceScreen>
