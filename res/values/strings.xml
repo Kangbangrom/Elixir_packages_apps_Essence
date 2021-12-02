@@ -46,7 +46,7 @@
     <string name="qs_category">Quick Settings</string>
     <string name="buttons_category">Buttons</string>
     <string name="lockscreen_gestures_category">LockScreen Gesture</string>
-
+    <string name="lockscreen_customization_category">Lockscreen Customizations</string>
     <string name="statusbar_gesture_category">Statusbar Gesture</string>
 
     <!-- App info dialog -->
@@ -66,6 +66,10 @@
     <!--Double Tap to Sleep Lockscreen-->
     <string name="lockscreen_tweaks_category_title">What to do</string>
     <string name="double_tap_sleep_lockscreen_title">Double tap to sleep on lockscreen</string>
+	    
+    <!-- Lockscreen battery info indicator  -->
+    <string name="lockscreen_battery_info_title">Lockscreen charging info</string>
+    <string name="lockscreen_battery_info_summary">Show charging current, voltage, wattage and battery temperature on lockscreen while charging</string>
 
     <!-- QuickSettings haptic feedback -->
     <string name="quick_settings_vibrate_title">Vibrate on touch</string>
