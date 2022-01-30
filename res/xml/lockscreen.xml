@@ -49,8 +49,6 @@
         android:summary="@string/lockscreen_battery_info_summary"
         android:defaultValue="true" />
 
-    </PreferenceCategory>
-
     <com.android.settings.custom.preference.SystemSettingSwitchPreference    
         android:key="lockscreen_small_clock"
         android:title="@string/lockscreen_small_clock_title"
@@ -64,6 +62,14 @@
         android:entryValues="@array/screen_off_animation_values"
         android:summary="%s"
         android:defaultValue="0" />
+    
+    <com.android.settings.custom.preference.SystemSettingSwitchPreference
+            android:key="enable_ripple_effect"
+            android:title="@string/enable_fingerprint_ripple_effect_title"
+            android:summary="@string/enable_fingerprint_ripple_effect_summary"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
 
 </PreferenceScreen>
 
