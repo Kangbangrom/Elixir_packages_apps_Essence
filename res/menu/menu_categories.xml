@@ -9,9 +9,21 @@
             app:exb_color="@color/bottombar_active" />
 
     <item
+            android:id="@+id/theme_category"
+            android:icon="@drawable/ic_theme_category"
+	    android:title="@string/theme_category" 
+            app:exb_color="@color/bottombar_active" />
+
+    <item
             android:id="@+id/status_bar_category"
             android:icon="@drawable/ic_status_bar_category"
             android:title="@string/status_bar_category" 
+            app:exb_color="@color/bottombar_active" />
+
+    <item
+            android:id="@+id/qs_category"
+            android:icon="@drawable/ic_qs_category"
+            android:title="@string/qs_category" 
             app:exb_color="@color/bottombar_active" />
 
     <item

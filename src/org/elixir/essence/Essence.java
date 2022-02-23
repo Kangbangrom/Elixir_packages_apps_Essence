@@ -55,6 +55,8 @@ import github.com.st235.lib_expandablebottombar.ExpandableBottomBar;
 
 import org.elixir.essence.categories.Lockscreen;
 import org.elixir.essence.categories.StatusBar;
+import org.elixir.essence.categories.Theme;
+import org.elixir.essence.categories.Qs;
 import org.elixir.essence.categories.System;
 import org.elixir.essence.categories.Hardware;
 
@@ -83,9 +85,13 @@ public class Essence extends SettingsPreferenceFragment implements
             public void onNavigationChanged(View view, int position) {
                 if (view.getId() == R.id.system_category) {
                     viewPager.setCurrentItem(position, true);
+		} else if (view.getId() == R.id.theme_category) {
+                    viewPager.setCurrentItem(position, true);
                 } else if (view.getId() == R.id.status_bar_category) {
                     viewPager.setCurrentItem(position, true);
-                } else if (view.getId() == R.id.lockscreen_category) {
+                } else if (view.getId() == R.id.qs_category) {
+                    viewPager.setCurrentItem(position, true);
+		} else if (view.getId() == R.id.lockscreen_category) {
                     viewPager.setCurrentItem(position, true);
                 } else if (view.getId() == R.id.hardware_category) {
                     viewPager.setCurrentItem(position, true);
@@ -121,9 +127,11 @@ public class Essence extends SettingsPreferenceFragment implements
         PagerAdapter(FragmentManager fm) {
             super(fm);
             frags[0] = new System();
-            frags[1] = new StatusBar();
-            frags[2] = new Lockscreen();
-            frags[3] = new Hardware();
+	    frags[1] = new Theme();
+            frags[2] = new StatusBar();
+	    frags[3] = new Qs();
+            frags[4] = new Lockscreen();
+            frags[5] = new Hardware();
         }
 
         @Override
@@ -146,10 +154,12 @@ public class Essence extends SettingsPreferenceFragment implements
         String titleString[];
         titleString = new String[]{
             getString(R.string.system_category),
+	    getString(R.string.theme_category),
             getString(R.string.status_bar_category),
-            getString(R.string.lockscreen_category),
+            getString(R.string.qs_category),
+	    getString(R.string.lockscreen_category),
             getString(R.string.hardware_category)};
-
+		
         return titleString;
     }
 
