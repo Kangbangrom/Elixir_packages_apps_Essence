@@ -398,4 +398,8 @@
     <string name="custom_fp_icon_summary">Enable custom UDFPS Icon from files</string>
     <string name="custom_fp_select_title">Select Custom UDFPS Icon</string>
     <string name="custom_fp_select_summary">Select custom image from your saved files or gallery</string>
+
+    <!-- QS battery estimates -->
+    <string name="qs_battery_estimate_title">Battery estimates</string>
+    <string name="qs_battery_estimate_summary">Show estimated remaining battery life next to the icon</string>
 </resources>
