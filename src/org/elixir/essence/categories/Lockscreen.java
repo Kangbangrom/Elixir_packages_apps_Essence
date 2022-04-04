@@ -17,13 +17,18 @@
 package org.elixir.essence.categories;
 
 import android.content.ContentResolver;
+import android.content.res.Resources;
 import android.os.Bundle;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;
+import androidx.preference.PreferenceCategory;
 
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
+
+import com.android.internal.util.custom.fod.FodUtils;
+import com.android.internal.util.custom.CustomUtils;
 
 public class Lockscreen extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
@@ -37,6 +42,14 @@ public class Lockscreen extends SettingsPreferenceFragment implements
         addPreferencesFromResource(R.xml.lockscreen);
 
         ContentResolver resolver = getActivity().getContentResolver();
+
+        final PreferenceScreen prefScreen = getPreferenceScreen();
+        Resources resources = getResources();
+
+        PreferenceCategory udfps = (PreferenceCategory) prefScreen.findPreference("udfps_category");
+        if (!FodUtils.hasFodSupport(getActivity())) {
+            prefScreen.removePreference(udfps);
+        }
     }
 
     @Override
