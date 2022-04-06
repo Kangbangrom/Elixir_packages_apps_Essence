@@ -40,12 +40,6 @@
             android:fragment="org.elixir.essence.fragments.Traffic"
             android:title="@string/traffic_title" />
 
-         <com.android.settings.custom.preference.SystemSettingSwitchPreference
-             android:key="show_fourg_icon"
-             android:title="@string/show_fourg_icon_title"
-             android:summary="@string/show_fourg_icon_summary"
-             android:defaultValue="false"/>
-
    </PreferenceCategory>
 
    <PreferenceCategory
