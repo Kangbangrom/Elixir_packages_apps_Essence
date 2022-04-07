@@ -39,7 +39,7 @@
     <string name="status_bar_category">Statusbar</string>
     <string name="system_category">Team</string>
     <string name="theme_category">Themes</string>
-    <string name="qs_category">Quick Settings</string>
+    <string name="qs_category">QS</string>
     <string name="lockscreen_category">Lockscreen</string>
     <string name="hardware_category">Extras</string>
     <string name="build_tweaks_summary_title">Strive for Amelioration</string>
@@ -96,13 +96,15 @@
 
     <string name="misc_category">Misc Settings</string>
     <string name="fingerprint_category">FP Sensor</string>
-    <string name="qs_category">QS</string>
+    <string name="qs_tile_cat">QS Tiles</string>
+    <string name="netindi_category">Network Indicator</string>
     <string name="statusbar_clock">Clocks Style</string>
     <string name="buttons_category">Power Menu</string>
     <string name="lockscreen_gestures_category">LockScreen Gesture</string>
     <string name="lockscreen_customization_category">Lockscreen Customizations</string>
     <string name="statusbar_gesture_category">Statusbar Gesture</string>
     <string name="battery_settings_title">Battery Settings</string>   
+    <string name="customisation_title">Comming SOON !</string>
 
     <!-- App info dialog -->
     <string name="extensions_dialog_title">Help us help you!</string>

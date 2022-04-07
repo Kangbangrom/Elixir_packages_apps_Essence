@@ -104,7 +104,7 @@
 	android:summary="@string/download_summary">
     <intent
         android:action="android.intent.action.VIEW"
-        android:data="https://projectelixiros.com" />
+        android:data="https://projectelixiros.com/download" />
     </Preference>
 
     <Preference

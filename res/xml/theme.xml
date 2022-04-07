@@ -16,4 +16,10 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+   <PreferenceCategory
+        android:layout="@layout/custom_preference_category2"
+        android:title="@string/customisation_title">
+
+   </PreferenceCategory>
+
 </PreferenceScreen>

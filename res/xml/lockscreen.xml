@@ -20,7 +20,8 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
     <PreferenceCategory
-        android:title="@string/lockscreen_gestures_category">
+            android:layout="@layout/custom_preference_category2"
+	    android:title="@string/lockscreen_gestures_category">
 
         <com.android.settings.custom.preference.SystemSettingSwitchPreference
             android:key="double_tap_sleep_lockscreen"
@@ -39,6 +40,7 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+	    android:layout="@layout/custom_preference_category2"
         android:title="@string/lockscreen_customization_category">
 
     <com.android.settings.custom.preference.SystemSettingSwitchPreference

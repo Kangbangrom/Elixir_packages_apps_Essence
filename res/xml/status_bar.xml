@@ -21,8 +21,9 @@
 
 
    <PreferenceCategory
-        android:key="statusbar_category"
-        android:title="@string/status_bar_category">
+	   android:key="statusbar_category"
+	   android:layout="@layout/custom_preference_category2"
+        android:title="@string/netindi_category">
 
     <Preference
             android:key="traffic"
@@ -32,7 +33,8 @@
    </PreferenceCategory>
 
    <PreferenceCategory
-        android:key="statusbar_gesture_category"
+	   android:key="statusbar_gesture_category"
+	   android:layout="@layout/custom_preference_category2"
         android:title="@string/statusbar_gesture_category">
 
          <com.android.settings.custom.preference.SystemSettingSwitchPreference
@@ -44,6 +46,7 @@
    </PreferenceCategory>
 
    <PreferenceCategory
+	   android:layout="@layout/custom_preference_category2"
             android:title="@string/statusbar_clock">
 
               <Preference
@@ -55,7 +58,8 @@
     </PreferenceCategory>
 
    <PreferenceCategory
-        android:key="battery_style_category"
+	   android:key="battery_style_category"
+	   android:layout="@layout/custom_preference_category2"
         android:title="@string/battery_style_category_title" >
 
     <com.android.settings.custom.preference.SystemSettingListPreference
