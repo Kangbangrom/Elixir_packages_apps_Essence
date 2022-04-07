@@ -37,6 +37,17 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <org.elixir.essence.navigation.BubbleToggleView
+            android:id="@+id/system_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:extensions_titleColorActive="@color/text_color"
+            app:extensions_colorActive="@color/color_active"
+            app:extensions_colorInactive="@color/color_inactive"
+            app:extensions_icon="@drawable/ic_system_category"
+            app:extensions_shape="@drawable/navigation_transition_background_drawable_system"
+            app:extensions_title="@string/system_category" />
+
+        <org.elixir.essence.navigation.BubbleToggleView
             android:id="@+id/status_bar_category"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -58,17 +69,6 @@
             app:extensions_shape="@drawable/navigation_transition_background_drawable_lockscreen"
             app:extensions_title="@string/lockscreen_category" />
 
-        <org.elixir.essence.navigation.BubbleToggleView
-            android:id="@+id/system_category"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:extensions_titleColorActive="@color/text_color"
-            app:extensions_colorActive="@color/color_active"
-            app:extensions_colorInactive="@color/color_inactive"
-            app:extensions_icon="@drawable/ic_system_category"
-            app:extensions_shape="@drawable/navigation_transition_background_drawable_system"
-            app:extensions_title="@string/system_category" />
-        
         <org.elixir.essence.navigation.BubbleToggleView
             android:id="@+id/hardware_category"
             android:layout_width="wrap_content"

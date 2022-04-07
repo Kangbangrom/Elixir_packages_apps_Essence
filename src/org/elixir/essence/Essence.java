@@ -81,11 +81,11 @@ public class Essence extends SettingsPreferenceFragment implements
         bubbleNavigationConstraintView.setNavigationChangeListener(new BubbleNavigationChangeListener() {
             @Override
             public void onNavigationChanged(View view, int position) {
-                if (view.getId() == R.id.status_bar_category) {
+                if (view.getId() == R.id.system_category) {
+                    viewPager.setCurrentItem(position, true);
+                } else if (view.getId() == R.id.status_bar_category) {
                     viewPager.setCurrentItem(position, true);
                 } else if (view.getId() == R.id.lockscreen_category) {
-                    viewPager.setCurrentItem(position, true);
-                } else if (view.getId() == R.id.system_category) {
                     viewPager.setCurrentItem(position, true);
                 } else if (view.getId() == R.id.hardware_category) {
                     viewPager.setCurrentItem(position, true);
@@ -120,9 +120,9 @@ public class Essence extends SettingsPreferenceFragment implements
 
         PagerAdapter(FragmentManager fm) {
             super(fm);
-            frags[0] = new StatusBar();
-            frags[1] = new Lockscreen();
-            frags[2] = new System();
+            frags[0] = new System();
+            frags[1] = new StatusBar();
+            frags[2] = new Lockscreen();
             frags[3] = new Hardware();
         }
 
@@ -145,9 +145,9 @@ public class Essence extends SettingsPreferenceFragment implements
     private String[] getTitles() {
         String titleString[];
         titleString = new String[]{
+            getString(R.string.system_category),
             getString(R.string.status_bar_category),
             getString(R.string.lockscreen_category),
-            getString(R.string.system_category),
             getString(R.string.hardware_category)};
 
         return titleString;

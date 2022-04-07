@@ -3,6 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
+            android:id="@+id/system_category"
+            android:icon="@drawable/ic_system_category"
+            android:title="@string/system_category" 
+            app:exb_color="@color/bottombar_active" />
+
+    <item
             android:id="@+id/status_bar_category"
             android:icon="@drawable/ic_status_bar_category"
             android:title="@string/status_bar_category" 
@@ -13,12 +19,6 @@
             android:icon="@drawable/ic_lockscreen_category"
             android:title="@string/lockscreen_category" 
             app:exb_color="@color/bottombar_active" />
-
-    <item
-            android:id="@+id/system_category"
-            android:icon="@drawable/ic_system_category"
-            android:title="@string/system_category" 
-            app:exb_color="@color/bottombar_active" />                                            
 
     <item
             android:id="@+id/hardware_category"

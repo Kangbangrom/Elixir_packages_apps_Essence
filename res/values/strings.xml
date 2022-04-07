@@ -37,11 +37,60 @@
 
     <!-- Extensions categories -->
     <string name="status_bar_category">Statusbar</string>
-    <string name="system_category">System</string>
+    <string name="system_category">Team</string>
     <string name="lockscreen_category">Lockscreen</string>
-    <string name="hardware_category">Hardware</string>
+    <string name="hardware_category">Extras</string>
     <string name="build_tweaks_summary_title">Strive for Amelioration</string>
     <string name="listview">ListView</string>
+
+    <!-- Project Elixir Team -->	    
+    <string name="rom_name">Project Elixir</string>
+    <string name="rom_summ">Project Elixir is another aftermarket AOSP ROM which basically offers minimal UI enhancement and close to Stock Android ROM with great performance, security and stability. In short, its perfectly balanced between Great Performance, Security, stability, minimal UI and awesome features including pixel goodies </string>
+
+    <string name="dev_support">Developer and Support Team</string>
+
+    <!-- Developers -->
+    <string name="dev1">Saurav</string>
+    <string name="dev1_summary">Founder, Lead Developer</string>
+
+    <string name="dev2">Probir</string>
+    <string name="dev2_summary">Team , Developer</string>
+
+    <string name="dev3">Prabh</string>
+    <string name="dev3_summary">Team , Developer</string>
+
+    <string name="dev4">Sarthak</string>
+    <string name="dev4_summary">Team , Developer</string>
+
+    <string name="dev5">Sukeerat</string>
+    <string name="dev5_summary">Team , Server Management</string>
+
+    <string name="dev6">Abhishek</string>
+    <string name="dev6_summary">Support Team</string>
+
+    <string name="note">Important NOTE</string>
+    <string name="note_summary">Dont Direct Message any devs, groups are there for some reason and use some brain. If we see any direct message we will ban him or her from everywhere. We arent here to serve you 24*7 so just keep patience. Just let us live our life peacefully</string>
+
+    <!-- Contact and Download -->
+    <string name="download">Download your Builds</string>
+    <string name="download_summary">Tap here to download builds for your respective devices</string>
+
+    <string name="donate">Donate us Here</string>
+    <string name="donate_summary">If you like our work, then please do support us by donating</string>
+
+    <string name="tele_group">Telegram Discussion Group</string>
+    <string name="grp_summary">If you have any issues, do share in our telegram discussion group</string>
+
+    <string name="tele_channel">Telegram Update Channel</string>
+    <string name="update_summary">Subscribe us on telegram channel for faster updates</string>
+
+    <string name="website">Our Official WebSite</string>
+    <string name="website_summary">Do visit our website, You will get all necessary info here</string>
+
+    <!-- Telegram Website Twitter -->
+    <string name="download_donate">Download and Donate</string>
+    <string name="telegram">Telegram Support</string>
+    <string name="web_twitter">Official Website</string>
 
     <string name="misc_category">Misc Settings</string>
     <string name="fingerprint_category">FP Sensor</string>

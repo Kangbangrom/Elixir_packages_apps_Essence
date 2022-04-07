@@ -19,24 +19,125 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-      <PreferenceCategory
-        android:title="@string/incall_vibration_category" >
+  <PreferenceCategory
+          android:title="@string/dev_support"
+          android:layout="@layout/custom_preference_category">
+  </PreferenceCategory>
 
-        <com.android.settings.custom.preference.SystemSettingSwitchPreference
-            android:key="vibrate_on_connect"
-            android:title="@string/incall_vibrate_connect_title"
-            android:defaultValue="false" />
+    <Preference
+        android:title=""
+        android:summary="@string/rom_summ" />
 
-         <com.android.settings.custom.preference.SystemSettingSwitchPreference
-            android:key="vibrate_on_callwaiting"
-            android:title="@string/incall_vibrate_call_wait_title"
-            android:defaultValue="false" />
+  <PreferenceCategory
+	android:title="@string/dev_support">
 
-         <com.android.settings.custom.preference.SystemSettingSwitchPreference
-            android:key="vibrate_on_disconnect"
-            android:title="@string/incall_vibrate_disconnect_title"
-            android:defaultValue="false" />
+     <Preference
+        android:title="@string/dev1"
+	android:summary="@string/dev1_summary">
+     <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://github.com/ugly-kid-af" />
+     </Preference>
 
-    </PreferenceCategory>
+     <Preference
+        android:title="@string/dev2"
+	android:summary="@string/dev2_summary">
+     <intent
+        android:action="android.intent.action.VIEW"
+	android:data="https://projectelixiros.com" />
+     </Preference>
+
+     <Preference
+        android:title="@string/dev3"
+        android:summary="@string/dev3_summary">
+     <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://projectelixiros.com" />
+     </Preference>
+
+     <Preference
+        android:title="@string/dev4"
+        android:summary="@string/dev4_summary">
+     <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://projectelixiros.com" />
+     </Preference>
+
+     <Preference
+        android:title="@string/dev5"
+        android:summary="@string/dev5_summary">
+     <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://projectelixiros.com" />
+     </Preference>
+
+     <Preference
+        android:title="@string/dev6"
+        android:summary="@string/dev6_summary">
+     <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://projectelixiros.com" />
+     </Preference>
+
+  </PreferenceCategory>
+
+<PreferenceCategory
+	android:title="@string/note">
+
+    <Preference
+	android:summary="@string/note_summary">
+    </Preference>
+
+</PreferenceCategory>
+
+<PreferenceCategory
+	android:title="@string/download_donate">
+    <Preference
+        android:title="@string/download"
+	android:summary="@string/download_summary">
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://projectelixiros.com" />
+    </Preference>
+
+    <Preference
+        android:title="@string/donate"
+	android:summary="@string/donate_summary">
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://projectelixiros.com" />
+    </Preference>
+</PreferenceCategory>
+
+<PreferenceCategory
+	android:title="@string/telegram">
+    <Preference
+        android:title="@string/tele_group"
+	android:summary="@string/grp_summary">
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://t.me/Elixir_Discussion" />
+    </Preference>
+
+    <Preference
+        android:title="@string/tele_channel"
+	android:summary="@string/update_summary">
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://t.me/Elixir_Updates" />
+    </Preference>
+</PreferenceCategory>
+
+<PreferenceCategory
+	android:title="@string/web_twitter">
+    <Preference
+        android:title="@string/website"
+	android:summary="@string/website_summary">
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://projectelixiros.com" />
+    </Preference>
+
+</PreferenceCategory>
 
 </PreferenceScreen>
