@@ -55,20 +55,20 @@
     <string name="dev1">Saurav</string>
     <string name="dev1_summary">Founder, Lead Developer</string>
 
-    <string name="dev2">Probir</string>
-    <string name="dev2_summary">Team , Developer</string>
+    <string name="dev2">Hamza</string>
+    <string name="dev2_summary">Developer, Team</string>
 
-    <string name="dev3">Prabh</string>
-    <string name="dev3_summary">Team , Developer</string>
+    <string name="dev3">Probir</string>
+    <string name="dev3_summary">Developer, Team</string>
 
-    <string name="dev4">Sarthak</string>
-    <string name="dev4_summary">Team , Developer</string>
+    <string name="dev4">Abhishek (Lop)</string>
+    <string name="dev4_summary">Moderator, Team</string>
 
-    <string name="dev5">Sukeerat</string>
-    <string name="dev5_summary">Team , Server Management</string>
+    <string name="dev5">Yasin</string>
+    <string name="dev5_summary">Moderator, Team</string>
 
-    <string name="dev6">Abhishek</string>
-    <string name="dev6_summary">Support Team</string>
+    <string name="dev6">PrajjuS</string>
+    <string name="dev6_summary">Automation Support</string>
 
     <string name="note">Important NOTE</string>
     <string name="note_summary">Dont Direct Message any devs, groups are there for some reason and use some brain. If we see any direct message we will ban him or her from everywhere. We arent here to serve you 24*7 so just keep patience. Just let us live our life peacefully</string>
