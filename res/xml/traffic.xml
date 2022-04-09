@@ -36,7 +36,8 @@
     <com.android.settings.custom.preference.SystemSettingListPreference
         android:key="network_traffic_mode"
         android:title="@string/network_traffic_mode_title"
-        android:entries="@array/network_traffic_mode_entries"
+	android:summary="@string/network_traffic_mode_summary"    
+	android:entries="@array/network_traffic_mode_entries"
         android:entryValues="@array/network_traffic_mode_values"
         android:defaultValue="0" />
 

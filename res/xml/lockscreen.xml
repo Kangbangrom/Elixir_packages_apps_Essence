@@ -62,6 +62,10 @@
 
     </PreferenceCategory>
 
+    <PreferenceCategory
+        android:layout="@layout/custom_preference_category2"
+        android:title="@string/ls_cat_secure">
+
     <com.android.settings.custom.preference.SecureSettingSwitchPreference
 	android:key="qstile_requires_unlocking"
         android:title="@string/qstile_requires_unlocking_title"
@@ -72,7 +76,9 @@
         android:key="secure_lockscreen_qs_disabled"
         android:title="@string/disable_qs_title"
         android:summary="@string/disable_qs_summary"
-        android:defaultValue="false" />
+	android:defaultValue="false" />
+
+    </PreferenceCategory>
 
 </PreferenceScreen>
 

@@ -105,6 +105,8 @@
     <string name="statusbar_gesture_category">Statusbar Gesture</string>
     <string name="battery_settings_title">Battery Settings</string>   
     <string name="customisation_title">Comming SOON !</string>
+    <string name="ls_cat_secure">Secure Lockscreen</string>
+    <string name="signal_category">Network Icon</string>
 
     <!-- App info dialog -->
     <string name="extensions_dialog_title">Help us help you!</string>
@@ -148,7 +150,8 @@
     <string name="network_traffic_dynamic">Dynamic</string>
     <string name="network_traffic_download">Download</string>
     <string name="network_traffic_upload">Upload</string>
-	    
+    <string name="network_traffic_mode_summary">Traffic Indicator Mode</string>
+
     <!-- Incall vibrate options -->
     <string name="incall_vibration_category">In-call vibration options</string>
     <string name="incall_vibrate_connect_title">Vibrate on connect</string>
@@ -270,7 +273,7 @@
 
     <!-- QS Tile requires unlocking before being accessible -->
     <string name="qstile_requires_unlocking_title">Secure QS tiles require unlocking</string>
-    <string name="qstile_requires_unlocking_summary">The following QS tiles require unlocking before you can acccess them from lock screen:\nAirplane, Cellular, NFC, Hotspot, USB tethering and Location</string>
+    <string name="qstile_requires_unlocking_summary">The following QS tiles require unlocking before you can acccess them from lock screen:\nAirplane, Cellular, NFC, Hotspot and USB tethering </string>
 
     <!-- Disable QS -->
     <string name="disable_qs_title">Hide QS in secure lockscreen</string>
@@ -294,9 +297,5 @@
     <!-- Quick QS Panel brightness slider -->
     <string name="quick_qs_brightness_slider_title">Show brightness slider in Quick QS Panel</string>
     <string name="quick_qs_brightness_slider_summary">Show a brightness slider in the quick qs panel</string>
-
-    <!-- Brightness control -->
-    <string name="status_bar_toggle_brightness">Brightness control</string>
-    <string name="status_bar_toggle_brightness_summary">Adjust brightness by sliding across the status bar</string>
 
 </resources>

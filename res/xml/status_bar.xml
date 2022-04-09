@@ -19,17 +19,15 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+   <PreferenceCategory
+        android:layout="@layout/custom_preference_category2"
+        android:title="@string/signal_category">
+      
          <com.android.settings.custom.preference.SystemSettingSwitchPreference
             android:key="use_old_mobiletype"
             android:title="@string/use_old_mobiletype_title"
             android:summary="@string/use_old_mobiletype_summary"
             android:defaultValue="false" />  
-
-        <com.android.settings.custom.preference.SecureSettingSwitchPreference
-            android:key="enable_location_privacy_indicator"
-            android:title="@string/location_privacy_title"
-            android:summary="@string/location_privacy_summary"
-            android:defaultValue="true" />
 
          <com.android.settings.custom.preference.SystemSettingSwitchPreference
              android:key="show_fourg_icon"
@@ -37,11 +35,19 @@
              android:summary="@string/show_fourg_icon_summary"
              android:defaultValue="false"/>
 
+   </PreferenceCategory>
+
         <com.android.settings.custom.preference.SecureSettingSwitchPreference
             android:key="show_combined_status_bar_signal_icons"
             android:title="@string/combined_status_bar_signal_icons"
             android:summary="@string/combined_status_bar_signal_icons_summary"
             android:defaultValue="false" />
+
+        <com.android.settings.custom.preference.SecureSettingSwitchPreference
+            android:key="enable_location_privacy_indicator"
+            android:title="@string/location_privacy_title"
+            android:summary="@string/location_privacy_summary"
+            android:defaultValue="true" />
 
         <com.android.settings.custom.preference.SystemSettingSwitchPreference
             android:key="show_volte_icon"
