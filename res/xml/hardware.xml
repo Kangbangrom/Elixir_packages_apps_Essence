@@ -23,6 +23,30 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+         android:layout="@layout/custom_preference_category2"
+            android:title="@string/key_category" >
+
+        <SwitchPreference
+            android:key="power_end_call"
+            android:title="@string/power_end_call_title"
+            android:summary="@string/power_end_call_summary"
+            android:persistent="false"/>
+
+        <com.android.settings.custom.preference.SystemSettingSwitchPreference
+            android:key="volume_answer_call"
+            android:title="@string/volume_answer_call_title"
+            android:summary="@string/volume_answer_call_summary"
+	    android:defaultValue="false" />
+
+        <SwitchPreference
+            android:key="home_answer_call"
+            android:title="@string/home_answer_call_title"
+            android:summary="@string/home_answer_call_summary"
+            android:persistent="false"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
 	    android:layout="@layout/custom_preference_category2"
         android:title="@string/incall_vibration_category" >
 
