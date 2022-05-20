@@ -357,4 +357,9 @@
     <string name="volume_answer_call_title">Answer call</string>
     <string name="volume_answer_call_summary">Answer incoming calls by pressing the volume buttons</string>
 
+    <!-- Gaming mode -->
+    <string name="game_custs">Gaming Mode Options</string>
+    <string name="gaming_mode_title">Game space</string>
+    <string name="gaming_mode_summary">Extra features for immersive gaming experience</string>
+
 </resources>
