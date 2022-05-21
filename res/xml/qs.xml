@@ -66,4 +66,33 @@
 
     </PreferenceCategory>
 
+
+   <PreferenceCategory
+            android:layout="@layout/custom_preference_category2"
+            android:title="@string/notification_material_dismiss_cat">
+
+       <com.android.settings.custom.preference.SystemSettingSwitchPreference
+            android:key="notification_material_dismiss"
+            android:title="@string/notification_material_dismiss_title"
+            android:summary="@string/notification_material_dismiss_summary"
+            android:defaultValue="false" />
+
+	<com.android.settings.custom.preference.SystemSettingSeekBarPreference
+            android:key="notification_material_dismiss_style"
+            android:title="@string/notification_material_dismiss_style_title"
+            android:dependency="notification_material_dismiss"
+            android:defaultValue="0"
+            android:max="9"
+            android:min="0" />
+
+        <com.android.settings.custom.preference.SystemSettingSeekBarPreference
+            android:key="notification_material_dismiss_bgstyle"
+            android:title="@string/notification_material_dismiss_bgstyle_title"
+            android:dependency="notification_material_dismiss"
+            android:defaultValue="0"
+            android:max="4"
+            android:min="0" />
+
+   </PreferenceCategory>
+
 </PreferenceScreen>
