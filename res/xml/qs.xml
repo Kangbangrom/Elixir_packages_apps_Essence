@@ -117,7 +117,7 @@
             android:dependency="artwork_media_background_enable_blur"
             android:defaultValue="1"
             android:max="25"
-            settings:min="1" />
+            android:min="1" />
 
         <com.android.settings.custom.preference.SystemSettingSeekBarPreference
             android:key="artwork_media_background_alpha"
@@ -125,7 +125,7 @@
             android:dependency="artwork_media_background"
             android:defaultValue="255"
             android:max="255"
-            settings:min="0" />
+            android:min="0" />
     </PreferenceCategory>
 
 </PreferenceScreen>
