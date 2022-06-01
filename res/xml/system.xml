@@ -68,22 +68,6 @@
         android:data="https://projectelixiros.com" />
      </Preference>
 
-     <Preference
-        android:title="@string/dev5"
-        android:summary="@string/dev5_summary">
-     <intent
-        android:action="android.intent.action.VIEW"
-        android:data="https://projectelixiros.com" />
-     </Preference>
-
-     <Preference
-        android:title="@string/dev6"
-        android:summary="@string/dev6_summary">
-     <intent
-        android:action="android.intent.action.VIEW"
-        android:data="https://projectelixiros.com" />
-     </Preference>
-
   </PreferenceCategory>
 
   <PreferenceCategory
