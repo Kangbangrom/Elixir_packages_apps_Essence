@@ -29,10 +29,22 @@
      <Preference
             android:key="qstiles"
             android:summary="@string/qs_style_summary"      
-            settings:layout="@layout/xd_pref_card_bot"
+            settings:layout="@layout/xd_pref_card_mid"
             android:fragment="org.elixir.essence.fragments.QSTiles"
             android:title="@string/qstiles_cust" />
- 
+
+     <!-- QS Transparency -->
+     <com.android.settings.custom.preference.SystemSettingSeekBarPreference
+        android:key="qs_transparency"
+        android:title="@string/qs_transparency_title"
+        android:summary="@string/qs_transparency_summary"
+	android:defaultValue="100"
+	settings:layout="@layout/xd_pref_card_bot"
+        settings:interval="1"
+        settings:units="%"
+        android:max="100"
+        settings:min="1" />
+
     <PreferenceCategory
         android:title="@string/media_category" 
         android:layout="@layout/custom_preference_category2">
