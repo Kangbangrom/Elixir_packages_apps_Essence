@@ -90,7 +90,8 @@
 
     <string name="misc_category">Misc Settings</string>
     <string name="fingerprint_category">FP Sensor</string>
-    <string name="qs_tile_cat">QS Tiles</string>
+    <string name="qs_tile_cat">QS Options</string>
+    <string name="volte_category">Volte Options</string>
     <string name="netindi_category">Network Indicator</string>
     <string name="statusbar_clock">Clocks Style</string>
     <string name="buttons_category">Power Menu</string>

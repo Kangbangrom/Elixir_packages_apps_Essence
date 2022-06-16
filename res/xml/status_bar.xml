@@ -35,19 +35,17 @@
              android:summary="@string/show_fourg_icon_summary"
              android:defaultValue="false"/>
 
-   </PreferenceCategory>
-
         <com.android.settings.custom.preference.SecureSettingSwitchPreference
             android:key="show_combined_status_bar_signal_icons"
             android:title="@string/combined_status_bar_signal_icons"
             android:summary="@string/combined_status_bar_signal_icons_summary"
             android:defaultValue="false" />
 
-        <com.android.settings.custom.preference.SecureSettingSwitchPreference
-            android:key="enable_location_privacy_indicator"
-            android:title="@string/location_privacy_title"
-            android:summary="@string/location_privacy_summary"
-            android:defaultValue="true" />
+   </PreferenceCategory>
+
+   <PreferenceCategory
+        android:layout="@layout/custom_preference_category2"
+	android:title="@string/volte_category">
 
         <com.android.settings.custom.preference.SystemSettingSwitchPreference
             android:key="show_volte_icon"
@@ -61,9 +59,11 @@
             android:summary="@string/vowifi_icon_summary"
             android:defaultValue="true" />
 
+   </PreferenceCategory>
+
    <PreferenceCategory
-	   android:key="statusbar_category"
-	   android:layout="@layout/custom_preference_category2"
+        android:key="statusbar_category"
+	android:layout="@layout/custom_preference_category2"
         android:title="@string/netindi_category">
 
     <Preference
@@ -119,6 +119,12 @@
             android:entries="@array/battery_percent_entries"
             android:entryValues="@array/battery_percent_values"
             android:defaultValue="0" />
+
+    <com.android.settings.custom.preference.SystemSettingSwitchPreference
+	    android:key="qs_show_battery_estimate"
+	    android:title="@string/qs_battery_estimate_title"
+	    android:summary="@string/qs_battery_estimate_summary"
+	    android:defaultValue="true"/>
 
     </PreferenceCategory>
 

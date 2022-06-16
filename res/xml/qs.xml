@@ -30,6 +30,12 @@
             android:summary="@string/quick_settings_vibrate_summary"
             android:defaultValue="false"/>
 
+        <com.android.settings.custom.preference.SecureSettingSwitchPreference
+            android:key="enable_location_privacy_indicator"
+            android:title="@string/location_privacy_title"
+            android:summary="@string/location_privacy_summary"
+            android:defaultValue="true" />
+
    </PreferenceCategory>
 
     <PreferenceCategory
