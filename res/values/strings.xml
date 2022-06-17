@@ -378,6 +378,7 @@
     <string name="artwork_media_background_enable_blur_title">Blur media media artwork background</string>
     <string name="artwork_media_background_blur_radius_title">Blur amount for media artwork</string>
     <string name="artwork_media_background_alpha_title">Transparency of media artwork</string>
+    <string name="artwork_media_fade_level_title">Artwork fade level</string>
 
     <!-- Udfps animations -->
     <string name="udfps_category">Udfps</string>
@@ -403,4 +404,5 @@
     <!-- QS battery estimates -->
     <string name="qs_battery_estimate_title">Battery estimates</string>
     <string name="qs_battery_estimate_summary">Show estimated remaining battery life next to the icon</string>
+
 </resources>
