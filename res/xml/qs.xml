@@ -30,6 +30,10 @@
         android:title="QS Customisations"
         android:layout="@layout/custom_preference_category2">
 
+        <Preference
+            android:key="qstiles"
+            android:fragment="org.elixir.essence.fragments.QSTiles"
+            android:title="@string/qstiles_cust" />
 
    </PreferenceCategory>
 

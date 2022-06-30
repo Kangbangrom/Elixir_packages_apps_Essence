@@ -127,6 +127,7 @@
     <!-- General strings -->
     <string name="ok">OK</string>
     <string name="save">Save</string>
+    <string name="general_category">General Customisations</string>
 
     <!-- Color Picker -->
     <string name="dialog_color_picker">Color Picker</string>
@@ -150,5 +151,11 @@
     <!-- Hide Status bar on lock screen -->
     <string name="hide_lockscreen_status_bar_title">Hide status bar</string>
     <string name="hide_lockscreen_status_bar_summary">Touch status bar to toggle visibility</string>
+
+    <!-- QS Customisations -->
+    <string name="qstiles_cust">QS Customisations</string>
+    <string name="qstiles_title">QSTiles Style</string>
+    <string name="qstiles_default">Default Style</string>
+    <string name="qstiles_custom1">Classic Style</string>
 
 </resources>
