@@ -409,4 +409,10 @@
     <string name="status_bar_toggle_brightness">Brightness control</string>
     <string name="status_bar_toggle_brightness_summary">Adjust brightness by sliding across the status bar</string>
 
+    <!-- QS Customisations -->
+    <string name="qstiles_cust">QS Customisations</string>
+    <string name="qstiles_title">QSTiles Style</string>
+    <string name="qstiles_default">Default Style</string>
+    <string name="qstiles_custom1">Classic Style</string>
+
 </resources>

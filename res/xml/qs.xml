@@ -22,7 +22,12 @@
    <PreferenceCategory
 	   android:key="qs_category"
 	   android:layout="@layout/custom_preference_category2"
-        android:title="@string/qs_tile_cat">
+       android:title="@string/qs_tile_cat">
+
+        <Preference
+            android:key="qstiles"
+            android:fragment="org.elixir.essence.fragments.QSTiles"
+            android:title="@string/qstiles_cust" />
 
         <com.android.settings.custom.preference.SecureSettingSwitchPreference
             android:key="quick_settings_vibrate"
