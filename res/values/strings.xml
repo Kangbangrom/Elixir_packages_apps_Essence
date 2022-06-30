@@ -127,6 +127,7 @@
     <!-- General strings -->
     <string name="ok">OK</string>
     <string name="save">Save</string>
+    <string name="general_category">General Customisations</string>
 
     <!-- Color Picker -->
     <string name="dialog_color_picker">Color Picker</string>
@@ -146,5 +147,11 @@
     <!-- Power menu on lockscreen -->
     <string name="lockscreen_power_menu_disabled_title">Disable power menu on lock screen</string>
     <string name="lockscreen_power_menu_disabled_summary">This will only disable the power menu on secure lock screens</string>
+
+    <!-- QS Customisations -->
+    <string name="qstiles_cust">QS Customisations</string>
+    <string name="qstiles_title">QSTiles Style</string>
+    <string name="qstiles_default">Default Style</string>
+    <string name="qstiles_custom1">Classic Style</string>
 
 </resources>
