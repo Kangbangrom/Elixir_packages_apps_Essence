@@ -19,29 +19,46 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-   <PreferenceCategory
-	   android:key="qs_category"
-	   android:layout="@layout/custom_preference_category2"
-       android:title="@string/qs_tile_cat">
+    <PreferenceCategory
+        android:title="@string/media_category" 
+        android:layout="@layout/custom_preference_category2">
 
-        <Preference
-            android:key="qstiles"
-            android:fragment="org.elixir.essence.fragments.QSTiles"
-            android:title="@string/qstiles_cust" />
+        <com.android.settings.custom.preference.SystemSettingSwitchPreference
+            android:key="artwork_media_background"
+            android:title="@string/artwork_media_background_title"
+            android:summary="@string/artwork_media_background_summary"
+            android:defaultValue="false" />
 
-        <com.android.settings.custom.preference.SecureSettingSwitchPreference
-            android:key="quick_settings_vibrate"
-            android:title="@string/quick_settings_vibrate_title"
-            android:summary="@string/quick_settings_vibrate_summary"
-            android:defaultValue="false"/>
+        <com.android.settings.custom.preference.SystemSettingSwitchPreference
+            android:key="artwork_media_background_enable_blur"
+            android:title="@string/artwork_media_background_enable_blur_title"
+            android:dependency="artwork_media_background"
+            android:defaultValue="false" />
 
-        <com.android.settings.custom.preference.SecureSettingSwitchPreference
-            android:key="enable_location_privacy_indicator"
-            android:title="@string/location_privacy_title"
-            android:summary="@string/location_privacy_summary"
-            android:defaultValue="true" />
+        <com.android.settings.custom.preference.SystemSettingSeekBarPreference
+            android:key="artwork_media_background_blur_radius"
+            android:title="@string/artwork_media_background_blur_radius_title"
+            android:dependency="artwork_media_background_enable_blur"
+            android:defaultValue="1"
+            android:max="25"
+            android:min="1" />
 
-   </PreferenceCategory>
+        <com.android.settings.custom.preference.SystemSettingSeekBarPreference
+            android:key="artwork_media_background_alpha"
+            android:title="@string/artwork_media_background_alpha_title"
+            android:dependency="artwork_media_background"
+            android:defaultValue="255"
+            android:max="255"
+            android:min="0" />
+
+        <com.android.settings.custom.preference.SystemSettingSeekBarPreference
+            android:key="artwork_media_fade_level"
+            android:title="@string/artwork_media_fade_level_title"
+            android:dependency="artwork_media_background"
+            android:max="100"
+            android:min="0"
+            android:defaultValue="30" />
+    </PreferenceCategory>
 
     <PreferenceCategory
 	    android:key="quick_settings_brighness_category"
@@ -106,45 +123,28 @@
 
    </PreferenceCategory>
 
-    <PreferenceCategory
-        android:title="@string/media_category" 
-	android:layout="@layout/custom_preference_category2">
+   <PreferenceCategory
+           android:key="qs_category"
+           android:layout="@layout/custom_preference_category2"
+       android:title="@string/qs_tile_cat">
 
-        <com.android.settings.custom.preference.SystemSettingSwitchPreference
-            android:key="artwork_media_background"
-            android:title="@string/artwork_media_background_title"
-            android:summary="@string/artwork_media_background_summary"
-            android:defaultValue="false" />
+        <Preference
+            android:key="qstiles"
+            android:fragment="org.elixir.essence.fragments.QSTiles"
+            android:title="@string/qstiles_cust" />
 
-        <com.android.settings.custom.preference.SystemSettingSwitchPreference
-            android:key="artwork_media_background_enable_blur"
-            android:title="@string/artwork_media_background_enable_blur_title"
-            android:dependency="artwork_media_background"
-            android:defaultValue="false" />
+        <com.android.settings.custom.preference.SecureSettingSwitchPreference
+            android:key="quick_settings_vibrate"
+            android:title="@string/quick_settings_vibrate_title"
+            android:summary="@string/quick_settings_vibrate_summary"
+            android:defaultValue="false"/>
 
-        <com.android.settings.custom.preference.SystemSettingSeekBarPreference
-            android:key="artwork_media_background_blur_radius"
-            android:title="@string/artwork_media_background_blur_radius_title"
-            android:dependency="artwork_media_background_enable_blur"
-            android:defaultValue="1"
-            android:max="25"
-            android:min="1" />
+        <com.android.settings.custom.preference.SecureSettingSwitchPreference
+            android:key="enable_location_privacy_indicator"
+            android:title="@string/location_privacy_title"
+            android:summary="@string/location_privacy_summary"
+            android:defaultValue="true" />
 
-        <com.android.settings.custom.preference.SystemSettingSeekBarPreference
-            android:key="artwork_media_background_alpha"
-            android:title="@string/artwork_media_background_alpha_title"
-            android:dependency="artwork_media_background"
-            android:defaultValue="255"
-            android:max="255"
-            android:min="0" />
-        
-        <com.android.settings.custom.preference.SystemSettingSeekBarPreference
-            android:key="artwork_media_fade_level"
-	        android:title="@string/artwork_media_fade_level_title"
-            android:dependency="artwork_media_background"
-            android:max="100"
-            android:min="0"
-	        android:defaultValue="30" />
-    </PreferenceCategory>
+   </PreferenceCategory>
 
 </PreferenceScreen>
