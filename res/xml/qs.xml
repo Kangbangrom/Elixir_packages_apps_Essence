@@ -29,20 +29,6 @@
             android:summary="@string/artwork_media_background_summary"
             android:defaultValue="false" />
 
-        <com.android.settings.custom.preference.SystemSettingSwitchPreference
-            android:key="artwork_media_background_enable_blur"
-            android:title="@string/artwork_media_background_enable_blur_title"
-            android:dependency="artwork_media_background"
-            android:defaultValue="false" />
-
-        <com.android.settings.custom.preference.SystemSettingSeekBarPreference
-            android:key="artwork_media_background_blur_radius"
-            android:title="@string/artwork_media_background_blur_radius_title"
-            android:dependency="artwork_media_background_enable_blur"
-            android:defaultValue="1"
-            android:max="25"
-            android:min="1" />
-
         <com.android.settings.custom.preference.SystemSettingSeekBarPreference
             android:key="artwork_media_background_alpha"
             android:title="@string/artwork_media_background_alpha_title"
