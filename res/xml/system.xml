@@ -49,7 +49,7 @@
 	android:summary="@string/dev2_summary">
      <intent
         android:action="android.intent.action.VIEW"
-	android:data="https://projectelixiros.com" />
+	android:data="https://github.com/nishant6342" />
      </Preference>
 
      <Preference
@@ -57,7 +57,7 @@
         android:summary="@string/dev3_summary">
      <intent
         android:action="android.intent.action.VIEW"
-        android:data="https://projectelixiros.com" />
+        android:data="https://github.com/improbir" />
      </Preference>
 
      <Preference
@@ -65,7 +65,7 @@
         android:summary="@string/dev4_summary">
      <intent
         android:action="android.intent.action.VIEW"
-        android:data="https://projectelixiros.com" />
+        android:data="https://github.com/marshmello61" />
      </Preference>
 
   </PreferenceCategory>
