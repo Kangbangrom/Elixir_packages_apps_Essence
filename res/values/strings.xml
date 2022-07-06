@@ -423,5 +423,6 @@
     <string name="lock_screen_custom_clock_face_spark">Spark</string>
     <string name="lock_screen_custom_clock_face_spark_circle">Spark Circle</string>
     <string name="lock_screen_custom_clock_face_buttercup_syra">Buttercup Syra</string>
+    <string name="lock_screen_custom_clock_face_waifu_box1">Waifu Box</string>
 
 </resources>
