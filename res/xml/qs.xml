@@ -120,6 +120,12 @@
             android:summary="@string/qs_footer_datausage_summary"
             android:defaultValue="false" />
 
+         <com.android.settings.custom.preference.SecureSettingSwitchPreference
+            android:key="hide_qs_call_strength"
+            android:title="@string/show_qs_call_strength_icon_title"
+            android:summary="@string/show_qs_call_strength_icon_summary"
+            android:defaultValue="true" />
+
         <Preference
             android:key="qstiles"
 	    android:summary="@string/qs_style_summary"	
