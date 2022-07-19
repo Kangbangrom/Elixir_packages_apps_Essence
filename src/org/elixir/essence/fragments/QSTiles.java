@@ -54,6 +54,7 @@ public class QSTiles extends SettingsPreferenceFragment implements OnPreferenceC
 
     private static final String KEY_QSTILES_STYLES = "qstiles_styles";
     private static final String CLASSIC_OVERLAY = "com.android.systemui.qstiles.classic";
+    private static final String OUTLINE_OVERLAY = "com.android.systemui.qstiles.Outline";
 
     private ListPreference mQSTilesStyles;
     private IOverlayManager mOverlayService;
@@ -93,8 +94,14 @@ public class QSTiles extends SettingsPreferenceFragment implements OnPreferenceC
             mQSTilesStyles.setSummary(mQSTilesStyles.getEntry());
             Settings.Secure.putInt(getActivity().getContentResolver(), QS_TILE_STYLE, Integer.parseInt((String) newValue));
             boolean enable = ((String) newValue).equals("1");
+            boolean enable2 = ((String) newValue).equals("2");
             try {
                 mOverlayService.setEnabled(CLASSIC_OVERLAY, enable, UserHandle.USER_CURRENT);
+            } catch (RemoteException re) {
+                throw re.rethrowFromSystemServer();
+            }
+            try {
+                mOverlayService.setEnabled(OUTLINE_OVERLAY, enable2, UserHandle.USER_CURRENT);
             } catch (RemoteException re) {
                 throw re.rethrowFromSystemServer();
             }
