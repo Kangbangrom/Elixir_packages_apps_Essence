@@ -19,13 +19,20 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+     <com.android.settings.custom.preference.SystemSettingSwitchPreference
+            android:key="qs_layout_toggle"
+            android:title="@string/qs_switch_title"
+            settings:layout="@layout/xd_pref_card_top"
+            android:summary="@string/qs_switch_title_summary"
+            android:defaultValue="false"/>
+
      <Preference
             android:key="qstiles"
             android:summary="@string/qs_style_summary"      
             settings:layout="@layout/xd_pref_card_bot"
             android:fragment="org.elixir.essence.fragments.QSTiles"
             android:title="@string/qstiles_cust" />
-
+ 
     <PreferenceCategory
         android:title="@string/media_category" 
         android:layout="@layout/custom_preference_category2">
