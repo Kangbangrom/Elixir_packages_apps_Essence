@@ -102,6 +102,8 @@
     <string name="ls_cat_secure">Secure Lockscreen</string>
     <string name="signal_category">Network Icon</string>
     <string name="notification_custs">Notification Options</string>
+    <string name="date_category">Date Options</string>
+    <string name="clock_category">Clock Options</string>
 
     <!-- App info dialog -->
     <string name="extensions_dialog_title">Help us help you!</string>

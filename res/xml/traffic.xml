@@ -20,7 +20,8 @@
         android:key="network_traffic_location"
         android:title="@string/network_traffic_location_title"
         android:summary="%s"
-        android:entries="@array/network_traffic_location_entries"
+	settings:layout="@layout/xd_pref_card_mid2"    
+	android:entries="@array/network_traffic_location_entries"
         android:entryValues="@array/network_traffic_location_values"
         android:defaultValue="0"
         android:persistent="false" />
@@ -36,7 +37,8 @@
     <com.android.settings.custom.preference.SystemSettingListPreference
         android:key="network_traffic_mode"
         android:title="@string/network_traffic_mode_title"
-	android:summary="@string/network_traffic_mode_summary"    
+	    android:summary="@string/network_traffic_mode_summary"    
+	    settings:layout="@layout/xd_pref_card_mid2"
 	android:entries="@array/network_traffic_mode_entries"
         android:entryValues="@array/network_traffic_mode_values"
         android:defaultValue="0" />

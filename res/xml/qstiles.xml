@@ -19,7 +19,8 @@
     <ListPreference
         android:key="qstiles_styles"
         android:title="@string/qstiles_title"
-        android:entries="@array/qstiles_styles_entries"
+	    settings:layout="@layout/xd_pref_card_mid2"
+	    android:entries="@array/qstiles_styles_entries"
         android:entryValues="@array/qstiles_styles_values"
         android:defaultValue="0"
         android:persistent="false" />

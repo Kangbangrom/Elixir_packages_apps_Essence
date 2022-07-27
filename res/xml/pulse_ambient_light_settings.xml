@@ -25,14 +25,17 @@
         android:title="@string/pulse_ambient_light_text"/>
 
     <PreferenceCategory
+	    android:layout="@layout/custom_preference_category2"
         android:title="@string/pulse_ambient_light_color">
 
         <com.android.settingslib.widget.RadioButtonPreference
             android:key="ambient_notification_light_automatic"
-            android:title="@string/ambient_notification_light_color_automatic_title" />
+		settings:layout="@layout/xd_pref_card_top"
+		android:title="@string/ambient_notification_light_color_automatic_title" />
 
         <com.android.settingslib.widget.RadioButtonPreference
-            android:key="ambient_notification_light_accent"
+		android:key="ambient_notification_light_accent"
+		settings:layout="@layout/xd_pref_card_bot"
             android:title="@string/ambient_notification_light_accent_title" />
     </PreferenceCategory>
 
