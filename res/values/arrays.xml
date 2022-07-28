@@ -223,6 +223,7 @@
         <item>@string/lock_screen_custom_clock_face_spark_circle</item>
         <item>@string/lock_screen_custom_clock_face_buttercup_syra</item>
         <item>@string/lock_screen_custom_clock_face_waifu_box1</item>
+        <item>@string/lock_screen_custom_clock_face_elixir</item>
 
     </string-array>
     <string-array name="lock_screen_custom_clock_face_values" translatable="false">
@@ -234,6 +235,7 @@
         <item>com.android.keyguard.clock.SparkCircleClockController</item>
         <item>com.android.keyguard.clock.ButterCupSyraClockController</item>
         <item>com.android.keyguard.clock.WaifuBox1ClockController</item>
+        <item>com.android.keyguard.clock.ElixirClockController</item>
     </string-array>
 
 </resources>
