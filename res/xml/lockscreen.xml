@@ -123,7 +123,7 @@
 
         <Preference
 		android:key="udfps_settings"
-		settings:layout="@layout/xd_pref_card_mid"
+		settings:layout="@layout/xd_pref_card_mid2"
             android:title="@string/udfps_settings_title"
             android:summary="@string/udfps_settings_summary"
             android:fragment="org.elixir.essence.fragments.UdfpsSettings" />
