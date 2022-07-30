@@ -19,7 +19,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-     <com.android.settings.custom.preference.SystemSettingSwitchPreference
+     <com.android.settings.custom.preference.SecureSettingSwitchPreference
             android:key="qs_layout_toggle"
             android:title="@string/qs_switch_title"
             settings:layout="@layout/xd_pref_card_top"
