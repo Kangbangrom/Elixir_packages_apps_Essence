@@ -448,7 +448,7 @@
 
     <!-- QS Layout Switch -->
     <string name="qs_switch_title">Switch to Fluid UI QS style</string>
-    <string name="qs_switch_title_summary">Switch to Fluid UI QS style. Required reboot. </string>
+    <string name="qs_switch_title_summary">Switch to Fluid UI QS style. Required SystemUI Restart. </string>
 
     <!-- QS Transparency -->
     <string name="qs_transparency_title">Background transparency</string>
