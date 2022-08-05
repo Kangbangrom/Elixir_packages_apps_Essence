@@ -44,8 +44,11 @@ import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
+import com.android.internal.util.custom.CustomUtils;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.SearchIndexable;
+
+import com.android.settings.custom.preference.SecureSettingSwitchPreference;
 
 import static android.provider.Settings.Secure.QS_TILE_STYLE;
 
@@ -54,9 +57,11 @@ public class QSTiles extends SettingsPreferenceFragment implements OnPreferenceC
 
     private static final String KEY_QSTILES_STYLES = "qstiles_styles";
     private static final String CLASSIC_OVERLAY = "com.android.systemui.qstiles.classic";
+    private static final String QS_LAYOUT_TOGGLE = "qs_layout_toggle";
 
     private ListPreference mQSTilesStyles;
     private IOverlayManager mOverlayService;
+    private SecureSettingSwitchPreference mQsLayoutToggle;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -74,6 +79,9 @@ public class QSTiles extends SettingsPreferenceFragment implements OnPreferenceC
         mQSTilesStyles.setValue(String.valueOf(Settings.Secure.getInt(resolver, QS_TILE_STYLE, 0)));
         mQSTilesStyles.setSummary(mQSTilesStyles.getEntry());
         mQSTilesStyles.setOnPreferenceChangeListener(this);
+
+        mQsLayoutToggle = (SecureSettingSwitchPreference) findPreference(QS_LAYOUT_TOGGLE);
+        mQsLayoutToggle.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -97,7 +105,9 @@ public class QSTiles extends SettingsPreferenceFragment implements OnPreferenceC
                 mOverlayService.setEnabled(CLASSIC_OVERLAY, enable, UserHandle.USER_CURRENT);
             } catch (RemoteException re) {
                 throw re.rethrowFromSystemServer();
-            }
+        } else if (preference == mQsLayoutToggle) {
+            CustomUtils.showSystemUiRestartDialog(getContext());
+            return true
         }
         return true;
     }
