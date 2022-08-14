@@ -44,7 +44,12 @@
             android:entryValues="@array/lockscreen_albumart_filter_values"
             android:defaultValue="0" />
 
-
+        <org.elixir.essence.preferences.SystemSettingSeekBarPreference
+            android:key="ls_media_filter_blur_radius"
+            android:title="@string/lockscreen_albumart_filter_blur_radius_title"
+            android:defaultValue="10"
+            android:max="25"
+            settings:min="1" />
 
     </PreferenceCategory>
 
