@@ -60,7 +60,7 @@
         android:layout="@layout/custom_preference_category">
   </PreferenceCategory>
 
-    <!-- Monet -->
+    <!-- Monet  -->
     <Preference
         settings:layout="@layout/essence_pref_card_top"
         android:fragment="org.elixir.essence.categories.Themes"
@@ -70,7 +70,7 @@
         android:summary="@string/summ_monet"
         android:title="@string/customisation_title" />
 
-    <!-- Status Bar -->
+    <!-- Status Bar  -->
     <Preference
         settings:layout="@layout/essence_pref_card_mid"
         android:fragment="org.elixir.essence.categories.StatusBar"
@@ -80,7 +80,7 @@
         android:summary="@string/summ_sbar"
         android:title="@string/statusbar_title" />
 
-    <!-- Quick Settings -->
+    <!-- Quick Settings  -->
     <Preference
         settings:layout="@layout/essence_pref_card_mid"
         android:fragment="org.elixir.essence.categories.Qs"
@@ -90,7 +90,7 @@
         android:summary="@string/summ_quick"
         android:title="@string/quicksettings_title" />
 
-    <!-- Lock Screen -->
+    <!-- Lock Screen  -->
     <Preference
         settings:layout="@layout/essence_pref_card_mid"
         android:fragment="org.elixir.essence.categories.Lockscreen"
@@ -112,7 +112,7 @@
         settings:controller="com.android.settings.gestures.GesturesSettingPreferenceController" />
 
 
-    <!-- Misc -->
+    <!-- Misc   -->
     <Preference
         settings:layout="@layout/essence_pref_card_bot"
         android:fragment="org.elixir.essence.categories.Hardware"
