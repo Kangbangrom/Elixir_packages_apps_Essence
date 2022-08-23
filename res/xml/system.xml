@@ -22,13 +22,8 @@
 
     <!-- Header -->
   <PreferenceCategory
-        android:title="Essence"
+        android:title="Project Elixir"
         android:layout="@layout/custom_preference_category_essence">
-  </PreferenceCategory>
-
-  <PreferenceCategory
-        android:title="@string/rom_name"
-        android:layout="@layout/custom_preference_category">
   </PreferenceCategory>
 
     <Preference
