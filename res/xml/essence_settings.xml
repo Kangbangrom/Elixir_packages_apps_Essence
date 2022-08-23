@@ -20,15 +20,9 @@
 
     <com.android.settingslib.widget.LayoutPreference
         android:key="about_elixir"
-        android:layout="@layout/about_elixir"
+        android:layout="@layout/about_essence"
         android:selectable="true" 
 	settings:controller="com.android.settings.deviceinfo.firmwareversion.ElixirLogoPreferenceController"/>
-
-    <!-- Essence Header -->
-    <PreferenceCategory
-        android:title="@string/essence_settings_title"
-        android:layout="@layout/custom_preference_category_essence">
-    </PreferenceCategory>
 
     <!-- About -->
     <PreferenceCategory
