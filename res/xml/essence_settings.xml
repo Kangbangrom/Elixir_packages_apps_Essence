@@ -18,17 +18,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:title=" ">
 
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="about_elixir"
+        android:layout="@layout/about_elixir"
+        android:selectable="true" 
+	settings:controller="com.android.settings.deviceinfo.firmwareversion.ElixirLogoPreferenceController"/>
+
     <!-- Essence Header -->
-  <PreferenceCategory
+    <PreferenceCategory
         android:title="@string/essence_settings_title"
         android:layout="@layout/custom_preference_category_essence">
-  </PreferenceCategory>
+    </PreferenceCategory>
 
     <!-- About -->
-  <PreferenceCategory
+    <PreferenceCategory
         android:title="About ROM"
         android:layout="@layout/custom_preference_category">
-  </PreferenceCategory>
+    </PreferenceCategory>
 
     <Preference
         settings:layout="@layout/essence_pref_card_top"
@@ -48,10 +54,10 @@
             android:data="https://www.paypal.me/uglykid24" />
     </Preference>
 
-  <PreferenceCategory
+    <PreferenceCategory
         android:title="Customisations"
         android:layout="@layout/custom_preference_category">
-  </PreferenceCategory>
+    </PreferenceCategory>
 
     <!-- Monet  -->
     <Preference
