@@ -16,6 +16,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:gravity="center_horizontal"
+    android:paddingTop="45dp"
     android:paddingBottom="32dp"
     android:textColor="?android:attr/textColorPrimary"
 	android:textSize="45dp"
