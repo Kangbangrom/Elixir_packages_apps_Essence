@@ -23,7 +23,7 @@
     <!-- Header -->
   <PreferenceCategory
         android:title="Project Elixir"
-        android:layout="@layout/custom_preference_category_essence">
+        android:layout="@layout/about_team_head">
   </PreferenceCategory>
 
     <Preference

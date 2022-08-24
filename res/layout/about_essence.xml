@@ -58,6 +58,6 @@
 	    android:layout_gravity="center"
 	    android:fontFamily="evolvesans-bold"
             android:textColor="?android:attr/textColorPrimary"
-	    android:textSize="45dp"/>
+	    android:textSize="34dp"/>
 
 </LinearLayout>
