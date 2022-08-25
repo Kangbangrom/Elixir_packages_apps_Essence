@@ -15,40 +15,23 @@
 -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/wave_info"
+    android:id="@+id/essence_info"
     android:gravity="center"
     android:orientation="vertical"
     android:layout_gravity="center_horizontal"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/phone_image"
-        android:layout_width="100dp"
-        android:layout_height="205dp"
+    <ImageView
+        android:id="@+id/essence_home_logo"
+        android:layout_width="400dp"
+        android:layout_height="266dp"
         android:layout_marginTop="25dp"
         android:layout_marginBottom="15dp"
-        app:cardElevation="5dp"
-        app:cardCornerRadius="18dp"
-        app:strokeColor="?android:attr/textColorPrimary"
-        app:strokeWidth="3dp">
-
-        <com.android.utils.aboutWallpaperView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:scaleType="centerCrop"
-            android:gravity="center"
-            android:elevation="0dp"
-            android:contentDescription="@null"
-            android:orientation="vertical" />
-
-        <ImageView
-            android:layout_width="50dp"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:src="@drawable/empty_logo" />
-
-    </com.google.android.material.card.MaterialCardView>
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+		android:src="@drawable/ic_essence_homepage_illustration" >
+    </ImageView>
     
     <TextView
 	    android:layout_width="wrap_content"
@@ -57,7 +40,7 @@
 	    android:layout_marginBottom="15dp"
 	    android:layout_gravity="center"
 	    android:fontFamily="evolvesans-bold"
-            android:textColor="?android:attr/textColorPrimary"
+        android:textColor="?android:attr/textColorPrimary"
 	    android:textSize="34dp"/>
 
 </LinearLayout>
