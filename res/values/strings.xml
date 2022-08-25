@@ -158,6 +158,11 @@
     <string name="qstiles_default">Default Style</string>
     <string name="qstiles_custom1">Classic Style</string>
 
+    <!-- Media art -->
+    <string name="lockscreen_media_category">Music</string>
+    <string name="media_art_title">Media cover art</string>
+    <string name="media_art_summary">Enable media cover art on the lockscreen</string>
+
     <!-- Lockscreen album art filter -->
     <string name="lockscreen_albumart_filter_title">Media cover art filter</string>
     <string name="lockscreen_albumart_filter_none">None</string>
