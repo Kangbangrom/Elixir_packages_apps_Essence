@@ -14,65 +14,37 @@
  * limitations under the License.
  */
 
-package org.elixir.essence;
+package org.elixir.essence.categories;
 
-import android.app.ActionBar;
-import android.app.Activity;
-import android.app.AlertDialog;
-import android.app.Dialog;
-import android.content.pm.ActivityInfo;
-import android.content.res.Configuration;
-import android.content.ContentResolver;
 import android.content.Context;
-import android.content.DialogInterface;
-import android.content.SharedPreferences;
+import android.content.ContentResolver;
 import android.content.res.Resources;
-import android.os.Build;
 import android.os.Bundle;
-import android.os.SystemProperties;
-import android.text.TextUtils;
-import android.util.Log;
-import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
-import android.view.Surface;
-import android.view.View;
-import android.view.ViewGroup;
-import android.view.Window;
-import android.view.WindowManager;
-import android.widget.Toast;
-
 import androidx.preference.Preference;
+import androidx.preference.PreferenceGroup;
+
+import androidx.preference.PreferenceScreen;
+import androidx.preference.Preference.OnPreferenceChangeListener;
 
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
-import org.elixir.essence.categories.Lockscreen;
-import org.elixir.essence.categories.StatusBar;
-import org.elixir.essence.categories.Themes;
-import org.elixir.essence.categories.Qs;
-import org.elixir.essence.categories.System;
-import org.elixir.essence.categories.Hardware;
-import org.elixir.essence.categories.Donate;
+public class Donate extends SettingsPreferenceFragment implements
+        Preference.OnPreferenceChangeListener {
 
-public class Essence extends SettingsPreferenceFragment implements   
-       Preference.OnPreferenceChangeListener {
-
-    private static final int MENU_HELP  = 0;
+    private static final String TAG = "Donate";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        addPreferencesFromResource(R.xml.donate);
+
         ContentResolver resolver = getActivity().getContentResolver();
-        addPreferencesFromResource(R.xml.essence_settings);
+
     }
 
-    @Override
-    public void onActivityCreated(Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-    }
 
     @Override
     public int getMetricsCategory() {
@@ -94,4 +66,3 @@ public class Essence extends SettingsPreferenceFragment implements
         return true;
     }
 }
-

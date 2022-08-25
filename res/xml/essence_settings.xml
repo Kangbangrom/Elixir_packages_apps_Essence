@@ -23,23 +23,23 @@
         android:layout="@layout/about_essence"
         android:selectable="false" />
 
+    <!-- Team  -->
     <Preference
         settings:layout="@layout/essence_pref_card_top"
         android:fragment="org.elixir.essence.categories.System"
         android:key="system_category"
         android:textStyle="bold"
         android:summary="@string/summ_about"
-	    android:title="Know more about us" />
-
+	android:title="Know more about us" />
+   
+    <!-- Donate  -->
     <Preference
-	    android:title="@string/donate"
-	    android:textStyle="bold"
-	    settings:layout="@layout/essence_pref_card_bot"
-	    android:summary="@string/donate_summary">
-        <intent
-            android:action="android.intent.action.VIEW"
-            android:data="https://www.paypal.me/uglykid24" />
-    </Preference>
+        settings:layout="@layout/essence_pref_card_bot"
+        android:fragment="org.elixir.essence.categories.Donate"
+        android:key="donate_category"
+        android:textStyle="bold"
+        android:summary="@string/donate_summary"
+        android:title="@string/donate" />
 
     <!-- Monet  -->
     <Preference
