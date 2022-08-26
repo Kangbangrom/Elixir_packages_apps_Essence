@@ -12,15 +12,26 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-         android:layout="@layout/custom_preference_category2"
+        android:layout="@layout/custom_preference_category2"
 	    android:title="@string/buttons_category" >
     
         <org.elixir.essence.preferences.SystemSettingSwitchPreference
-        android:key="lockscreen_power_menu_disabled"
-        android:title="@string/lockscreen_power_menu_disabled_title"
-        android:summary="@string/lockscreen_power_menu_disabled_summary"
-        android:defaultValue="true" />
+            android:key="lockscreen_power_menu_disabled"
+            android:title="@string/lockscreen_power_menu_disabled_title"
+            android:summary="@string/lockscreen_power_menu_disabled_summary"
+            android:defaultValue="true" />
    
     </PreferenceCategory>
- 
+
+    <PreferenceCategory
+        android:layout="@layout/custom_preference_category2"
+	    android:title="Essence Customisations" >
+    
+        <SwitchPreference
+            android:key="hide_essence_icons"
+            android:title="Hide icons of essence"
+            android:summary="Requires restart essence for changes to take effect."
+            android:defaultValue="false" />
+
+    </PreferenceCategory>
 </PreferenceScreen>
