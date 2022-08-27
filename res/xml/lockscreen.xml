@@ -32,6 +32,11 @@
         android:title="@string/general_category">
 
         <org.elixir.essence.preferences.SystemSettingSwitchPreference
+            android:key="double_tap_sleep_lockscreen"
+            android:title="@string/double_tap_sleep_lockscreen_title"
+            android:defaultValue="false" />
+
+        <org.elixir.essence.preferences.SystemSettingSwitchPreference
             android:key="hide_lockscreen_status_bar"
             android:title="@string/hide_lockscreen_status_bar_title"
             android:summary="@string/hide_lockscreen_status_bar_summary"
