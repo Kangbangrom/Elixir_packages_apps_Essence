@@ -156,6 +156,7 @@
     <string name="qstiles_title">QSTiles Style</string>
     <string name="qstiles_default">Default Style</string>
     <string name="qstiles_custom1">Classic Style</string>
+    <string name="qstiles_custom2">Outline Style</string>
 
     <!-- Hide Status bar on lock screen -->
     <string name="hide_lockscreen_status_bar_title">Hide status bar</string>
