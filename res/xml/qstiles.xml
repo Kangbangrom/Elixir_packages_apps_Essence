@@ -14,11 +14,18 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-    android:title="@string/qstiles_cust">
+    android:title=" ">
+
+    <!-- Header -->
+    <PreferenceCategory
+        android:title="@string/qstiles_cust"
+        android:layout="@layout/custom_preference_category_essence">
+    </PreferenceCategory>
 
     <ListPreference
         android:key="qstiles_styles"
-        android:title="@string/qstiles_title"
+	    android:title="@string/qstiles_title"
+	    settings:layout="@layout/xd_pref_card_mid2"
         android:entries="@array/qstiles_styles_entries"
         android:entryValues="@array/qstiles_styles_values"
         android:defaultValue="0"

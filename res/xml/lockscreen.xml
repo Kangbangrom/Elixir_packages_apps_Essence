@@ -27,19 +27,15 @@
     </PreferenceCategory>
 
     <!-- Preferences -->
+
     <PreferenceCategory
-        android:layout="@layout/custom_preference_category"
-        android:title="@string/general_category">
+            android:layout="@layout/custom_preference_category"
+            android:title="@string/lockscreen_gestures_category">
 
         <org.elixir.essence.preferences.SystemSettingSwitchPreference
             android:key="double_tap_sleep_lockscreen"
-            android:title="@string/double_tap_sleep_lockscreen_title"
-            android:defaultValue="false" />
-
-        <org.elixir.essence.preferences.SystemSettingSwitchPreference
-            android:key="hide_lockscreen_status_bar"
-            android:title="@string/hide_lockscreen_status_bar_title"
-            android:summary="@string/hide_lockscreen_status_bar_summary"
+	    settings:layout="@layout/xd_pref_card_mid2"	
+	    android:title="@string/double_tap_sleep_lockscreen_title"
             android:defaultValue="false" />
 
     </PreferenceCategory>
@@ -50,14 +46,16 @@
 
         <org.elixir.essence.preferences.SecureSettingSwitchPreference
             android:key="lockscreen_media_metadata"
-            android:title="@string/media_art_title"
+		android:title="@string/media_art_title"
+		settings:layout="@layout/xd_pref_card_top"
             android:summary="@string/media_art_summary"
             android:defaultValue="true" />
 
         <org.elixir.essence.preferences.SystemSettingListPreference
             android:key="lockscreen_albumart_filter"
             android:title="@string/lockscreen_albumart_filter_title"
-            android:entries="@array/lockscreen_albumart_filter_entries"
+		android:entries="@array/lockscreen_albumart_filter_entries"
+		settings:layout="@layout/xd_pref_card_bot"
             android:entryValues="@array/lockscreen_albumart_filter_values"
             android:dependency="lockscreen_media_metadata"
             android:defaultValue="0" />
@@ -72,8 +70,15 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-            android:layout="@layout/custom_preference_category"
-	        android:title="@string/lockscreen_gestures_category">
+        android:layout="@layout/custom_preference_category"
+        android:title="@string/general_category">
+
+        <org.elixir.essence.preferences.SystemSettingSwitchPreference
+		android:key="hide_lockscreen_status_bar"
+		settings:layout="@layout/xd_pref_card_mid2"
+            android:title="@string/hide_lockscreen_status_bar_title"
+            android:summary="@string/hide_lockscreen_status_bar_summary"
+            android:defaultValue="false" />
 
     </PreferenceCategory>
 

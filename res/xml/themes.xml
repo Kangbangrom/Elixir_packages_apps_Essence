@@ -27,8 +27,9 @@
         android:layout="@layout/custom_preference_category"
         android:title="@string/customisation_title">
 
-		<ListPreference
-            android:key="custom_signal_styles"
+	<ListPreference
+	    android:key="custom_signal_styles"
+	    settings:layout="@layout/xd_pref_card_mid2"
             android:title="@string/custom_signal_bar_title"
             android:entries="@array/signal_styles_entries"
             android:entryValues="@array/signal_styles_values"

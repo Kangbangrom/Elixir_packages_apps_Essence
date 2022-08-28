@@ -28,16 +28,11 @@
 
     <PreferenceCategory
         android:layout="@layout/custom_preference_category"
-        android:title="@string/signal_category">
-    
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:layout="@layout/custom_preference_category"
-        android:title="@string/general_category">
+        android:title="StatusBar Gesture">
     
         <org.elixir.essence.preferences.SystemSettingSwitchPreference	    
-            android:key="double_tap_sleep_gesture"
+		android:key="double_tap_sleep_gesture"
+		settings:layout="@layout/xd_pref_card_mid2"
             android:title="@string/double_tap_sleep_gesture_title"
             android:summary="@string/double_tap_sleep_gesture_summary"
             android:defaultValue="false" />

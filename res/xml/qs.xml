@@ -27,13 +27,14 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-	    android:key="general_category"
+	    android:key="secure_category"
 	    android:layout="@layout/custom_preference_category"
-        android:title="@string/general_category">
+        android:title="Secure Lockscreen">
 
         <org.elixir.essence.preferences.SystemSettingSwitchPreference
-            android:key="use_tiles_on_secure_keyguard"
-            android:title="@string/use_tiles_on_secure_keyguard_title"
+		android:key="use_tiles_on_secure_keyguard"
+		settings:layout="@layout/xd_pref_card_mid2"
+            android:title="Disable sensitive qs tiles"
             android:summary="@string/use_tiles_on_secure_keyguard_summary"
             android:defaultValue="true" />
 
@@ -43,7 +44,9 @@
         android:layout="@layout/custom_preference_category">
 
         <Preference
-            android:key="qstiles"
+		android:key="qstiles"
+		android:summary="Change Qs Layout"
+	    settings:layout="@layout/xd_pref_card_mid2"
             android:fragment="org.elixir.essence.fragments.QSTiles"
             android:title="@string/qstiles_cust" />
 
