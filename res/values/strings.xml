@@ -419,6 +419,7 @@
     <string name="qstiles_title">QSTiles Style</string>
     <string name="qstiles_default">Default Style</string>
     <string name="qstiles_custom1">Classic Style</string>
+    <string name="qstiles_custom2">Outline Style</string>
 
     <!-- Lockscreen Clocks -->
     <string name="lock_screen_custom_clock_face_category">Lockscreen Clock</string>
